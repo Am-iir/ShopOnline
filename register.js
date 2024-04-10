@@ -29,9 +29,15 @@ function registerUser() {
 
 function getRegisterData() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        document.getElementById('registrationMessage').innerHTML = xhr.responseText;
+        let response = xhr.responseText;
+        if (response === 'success') {
+            window.location.href = 'bidding.htm';
+        } else {
+            document.getElementById('registrationMessage').innerHTML = response;
+        }
     }
 }
+
 
 function resetFields() {
     document.getElementById('registrationForm').reset();

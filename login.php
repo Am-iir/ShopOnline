@@ -40,8 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($foundUser) {
 
-            //Redirect to bidding page when user is found
-            header("Location: bidding.htm");
+            echo 'success';
 
         } else {
             echo "Invalid email or password. Please try again.";

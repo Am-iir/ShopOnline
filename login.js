@@ -23,7 +23,12 @@ function login() {
 
 function getData() {
     if (xhr.readyState == 4 && xhr.status == 200) {
-        document.getElementById('loginMessage').innerHTML = xhr.responseText;
+        let response = xhr.responseText;
+        if (response === 'success') {
+            window.location.href = 'bidding.htm';
+        } else {
+            document.getElementById('loginMessage').innerHTML = response;
+        }
     }
 }
 

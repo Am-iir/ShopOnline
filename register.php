@@ -135,12 +135,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $subject = 'Welcome to ShopOnline!';
                 $message = "Dear $firstName, welcome to use ShopOnline! Your password is $password.";
                 $headers = "From: registration@shoponline.com.au\r\n";
-             //   mail($to, $subject, $message, $headers, "-r 104088013@student.swin.edu.au");
+                mail($to, $subject, $message, $headers, "-r 104088013@student.swin.edu.au");
 
-                echo 'Registration successful';
+                echo 'success';
 
-                //Redirect to bidding page after  successful registration
-                // header("Location: bidding.htm");
             }
         }
     } else {
