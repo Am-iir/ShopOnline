@@ -71,6 +71,7 @@ form label {
 }
 
 form input[type="email"],
+form input[type="text"],
 form input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -114,10 +115,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-#loginMessage {
+#loginMessage, #registrationMessage {
     margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
     color: red;
 }
 

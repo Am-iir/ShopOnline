@@ -1,0 +1,67 @@
+<!--
+    Student Name: Amir Maharjan
+    Student ID: 104088013
+
+    This file is to fill the details for  customer to register to system
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - ShopOnline</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="heading">Shop Online</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.htm">Listing</a></li>
+            <li><a href="bidding.htm">Bidding</a></li>
+            <li><a href="maintenance.htm">Maintenance</a></li>
+            <li><a href="login.htm">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<p class="subHeading">
+    Registration Details
+</p>
+<div class="container">
+
+    <p class="requiredField">* Required Fields</p>
+    <form id="registrationForm">
+        <label for="firstName">First Name: <span class="requiredField">*</span></label>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="surname">Surname: <span class="requiredField">*</span></label>
+        <input type="text" id="surname" name="surname" required>
+        <br>
+        <label for="email">Email: <span class="requiredField">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password: <span class="requiredField">*</span> </label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirmPassword">Confirm Password: <span class="requiredField">*</span></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+        <div class="button-container">
+            <button type="button" onclick="registerUser()">Register</button>
+            <button type="button" onclick="reset()">Reset</button>
+        </div>
+
+    </form>
+
+    <div id="registrationMessage"></div>
+
+    </div>
+
+<script src="register.js"></script>
+</body>
+</html>
