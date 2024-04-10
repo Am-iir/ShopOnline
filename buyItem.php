@@ -75,6 +75,6 @@ if (isset($_SESSION['customerId'])) {
     }
 } else {
 
-    echo "Error: Customer is not logged in.";
+    echo "Please login first and then you can buy item";
 }
 ?>

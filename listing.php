@@ -12,7 +12,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['customerId'])) {
 
-    echo "Please login first";
+    echo "Please login first to add items";
 
 } else {
 

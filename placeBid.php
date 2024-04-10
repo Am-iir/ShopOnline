@@ -7,6 +7,10 @@
     This file handles the functionality of placing bid for Item
 */
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 
 // Check if bidder's ID is set in the session
@@ -85,6 +89,6 @@ if (isset($_SESSION['customerId'])) {
         echo "Some fields are missing.";
     }
 } else {
-    echo "Error: Bidder is not logged in.";
+    echo "Please login first to place the bid";
 }
 ?>
