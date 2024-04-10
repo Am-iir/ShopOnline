@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Populate options for minutes (up to 60)
-        for (var i = 1; i < 60; i++) {
+        for (var i = 0; i < 60; i++) {
             var optionMinutes = document.createElement("option");
             optionMinutes.value = i;
             optionMinutes.text = i;
