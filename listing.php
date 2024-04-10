@@ -35,9 +35,9 @@ if (!isset($_SESSION['customerId'])) {
             empty($reservePrice) ||
             empty($buyItNowPrice) ||
             empty($startPrice) ||
-            empty($durationDays) ||
-            empty($durationHours) ||
-            empty($durationMinutes)
+            ($durationDays == "") ||
+            ($durationHours == "") ||
+            ($durationMinutes == "")
         ) {
 
             echo "All fields are required";
@@ -67,13 +67,13 @@ if (!isset($_SESSION['customerId'])) {
 
             } else {
 
-                // Load existing customers from XML or create a new XML if it doesn't exist
                 $xmlFile = 'auction.xml';
                 $dom = new DOMDocument();
                 $dom->preserveWhiteSpace = false;
 
                 date_default_timezone_set('Australia/Sydney');
 
+                // Load existing items from XML or create a new XML if it doesn't exist
                 if (file_exists($xmlFile)) {
                     $dom->load($xmlFile);
                 } else {
