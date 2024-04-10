@@ -33,8 +33,9 @@ function getRegisterData() {
     }
 }
 
-function reset() {
+function resetFields() {
     document.getElementById('registrationForm').reset();
+    document.getElementById('registrationMessage').innerHTML = '';
 }
 
 
