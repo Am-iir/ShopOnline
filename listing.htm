@@ -1,0 +1,94 @@
+<!--
+    Student Name: Amir Maharjan
+    Student ID: 104088013
+
+    This file takes data about the item they want to auction
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing - ShopOnline</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="heading">Shop Online</h2>
+        <ul>
+            <li><a href="login.htm">Home</a></li>
+            <li><a href="listing.htm">Listing</a></li>
+            <li><a href="bidding.htm">Bidding</a></li>
+            <li><a href="maintenance.htm">Maintenance</a></li>
+            <li><a href="login.htm">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<p class="subHeading" style="font-style: italic;">
+To create a listing, enter listing details below
+
+</p>
+<div class="container">
+
+    <p class="requiredField">* Required Fields</p>
+    <form id="listingForm">
+        <label for="itemName">Item Name:</label><br>
+        <input type="text" id="itemName" name="itemName" ><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" >
+            <option value="">Select a Category</option>
+            <!-- Existing categories will be  added here -->
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="newCategory" id="newCategoryLabel" style="display: none;">New Category:</label><br>
+        <input type="text" id="newCategory" name="newCategory" style="display: none;"><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" ></textarea><br>
+
+        <label for="reservePrice">Reserve Price:</label><br>
+        <input type="number" id="reservePrice" name="reservePrice" min="0" ><br>
+
+        <label for="buyItNowPrice">Buy-it-Now Price:</label><br>
+        <input type="number" id="buyItNowPrice" name="buyItNowPrice" min="0" ><br>
+
+        <label for="startPrice">Start Price:</label><br>
+        <input type="number" id="startPrice" name="startPrice" min="0" ><br>
+
+        <label for="duration">Duration:</label><br>
+        <label for="durationDays">Days:</label>
+        <select id="durationDays" name="durationDays" >
+            <option value=''>Day</option>
+            <!-- List of Minutes from 1 to 30 is added from js -->
+        </select>
+        <label for="durationHours">Hours:</label>
+        <select id="durationHours" name="durationHours" >
+            <option value=''>Hour</option>
+            <!-- List of Minutes from 1 to 24 is added from js -->
+        </select>
+        <label for="durationMinutes">Minutes:</label>
+        <select id="durationMinutes" name="durationMinutes">
+            <option value=''>Minute</option>
+            <!-- List of Minutes from 1 to 60 is added from js -->
+        </select><br>
+        <div class="button-container">
+            <button type="button" onclick="handleListing()">Listing</button>
+            <button type="button" onclick="resetFields()">Reset</button>
+        </div>
+    </form>
+
+    <div id="listingMessage">
+
+    </div>
+</div>
+
+<script src="listing.js"></script>
+</body>
+</html>

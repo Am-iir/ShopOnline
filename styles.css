@@ -72,7 +72,10 @@ form label {
 
 form input[type="email"],
 form input[type="text"],
-form input[type="password"] {
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form select{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -118,6 +121,10 @@ button:hover {
 #loginMessage, #registrationMessage {
     margin-top: 20px;
     color: red;
+}
+
+#listingMessage{
+    margin-top: 20px;
 }
 
 a {
