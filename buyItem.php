@@ -48,6 +48,7 @@ if (isset($_SESSION['customerId'])) {
                     $bidderIDNode->nodeValue = $bidderID;
 
                     $item->getElementsByTagName('status')->item(0)->nodeValue = 'sold';
+                    $doc->formatOutput = true;
                     $doc->save($xmlFile);
 
                     $itemFound = true;
