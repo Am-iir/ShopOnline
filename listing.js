@@ -133,3 +133,9 @@ function handleListing(event) {
 
     xhr.send(data);
 }
+
+function resetFields() {
+    document.getElementById('listingForm').reset();
+    document.getElementById('listingMessage').innerHTML = '';
+
+}
