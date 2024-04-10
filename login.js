@@ -27,7 +27,9 @@ function getData() {
     }
 }
 
-function reset() {
+function resetFields() {
     document.getElementById('email').value = '';
     document.getElementById('password').value = '';
+    document.getElementById('loginMessage').innerHTML = '';
+
 }
