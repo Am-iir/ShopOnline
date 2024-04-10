@@ -28,20 +28,38 @@ if (!isset($_SESSION['customerId'])) {
         $durationHours = $_POST["durationHours"];
         $durationMinutes = $_POST["durationMinutes"];
 
-        if (
-            empty($itemName) ||
-            empty($category) ||
-            empty($description) ||
-            empty($reservePrice) ||
-            empty($buyItNowPrice) ||
-            empty($startPrice) ||
-            ($durationDays == "") ||
-            ($durationHours == "") ||
-            ($durationMinutes == "")
-        ) {
+        $emptyErrMsg = "";
 
-            echo "All fields are required";
+        if (empty($itemName)) {
+            $emptyErrMsg .= "Item name is required. <br>";
+        }
+        if (empty($category)) {
+            $emptyErrMsg .= "Category is required. <br>";
+        }
+        if (empty($description)) {
+            $emptyErrMsg .= "Description is required. <br>";
+        }
+        if (empty($reservePrice)) {
+            $emptyErrMsg .= "Reserve price is required. <br>";
+        }
+        if (empty($buyItNowPrice)) {
+            $emptyErrMsg .= "Buy It Now price is required. <br>";
+        }
+        if (empty($startPrice)) {
+            $emptyErrMsg .= "Start Price is required. <br>";
+        }
+        if ($durationDays == "") {
+            $emptyErrMsg .= "Duration Days are required. <br>";
+        }
+        if ($durationHours == "") {
+            $emptyErrMsg .= "Duration Hours are required. <br>";
+        }
+        if ($durationMinutes == "") {
+            $emptyErrMsg .= "Duration Minutes are required. <br>";
+        }
 
+        if ($emptyErrMsg != "") {
+            echo $emptyErrMsg;
         } else {
 
             $errMsg = '';
