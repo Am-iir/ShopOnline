@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - ShopOnline</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+
+    <nav>
+        <h2>Shop Online</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listing.htm">Listing</a></li>
+            <li><a href="bidding.htm">Bidding</a></li>
+            <li><a href="maintenance.htm">Maintenance</a></li>
+            <li><a href="login.htm">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Login to ShopOnline</h1>
+<form id="loginForm" >
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="button" onclick="login()">Login</button>
+</form>
+
+<div id="loginMessage"></div>
+</body>
+<script src="login.js"></script>
+</html>
