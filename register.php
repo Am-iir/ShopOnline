@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $dom->save($xmlFile);
 
                 // Store customerId session variables
-                $_SESSION['customerId'] = $customerNode;
+                $_SESSION['customerId'] = $customerId;
 
                 $to = $email;
                 $subject = 'Welcome to ShopOnline!';

@@ -21,7 +21,7 @@
                 <th>Bidder ID</th>
                 <th>Status</th>
             </tr>
-            <xsl:apply-templates select="items/item"/>
+            <xsl:apply-templates select="items/item[status='sold' or status='failed']"/>
         </table>
         <p style="font-weight: bold; color: green; font-size: 20px; margin-top: 20px;">
             <p>Total number of sold items:

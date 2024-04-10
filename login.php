@@ -30,8 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Check if email and password match
             if ($customerEmail == $email && $customerPassword == $password) {
 
+                $customerId = $customer->getElementsByTagName('id')->item(0)->nodeValue;
+
                 // Store customerId session variables
-                $_SESSION['customerId'] = $customer->getAttribute('id');
+                $_SESSION['customerId'] = $customerId;
 
                 $foundUser = true;
                 break;
