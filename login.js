@@ -26,3 +26,8 @@ function getData() {
         document.getElementById('loginMessage').innerHTML = xhr.responseText;
     }
 }
+
+function reset() {
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
+}
