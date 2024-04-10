@@ -51,7 +51,7 @@ nav li a:hover {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffffff;
@@ -131,4 +131,54 @@ a {
     color: red;
     text-decoration: underline;
 
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.item label {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed */
+    font-weight: bold;
+}
+
+.item button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; /* Add space above the buttons */
+}
+
+.place-bid {
+    background-color: #1e90ff; /* Dark blue */
+    color: white;
+}
+
+.buy-now {
+    background-color: #008000; /* Green */
+    color: white;
+}
+
+#timeLeft{
+    padding-right: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+#itemStatus {
+    text-align: center;
+    color: red;
+}
+
+.itemButtonContainer{
+    text-align: center;
 }

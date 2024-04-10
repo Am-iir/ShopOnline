@@ -1,0 +1,49 @@
+<!--
+    Student Name: Amir Maharjan
+    Student ID: 104088013
+
+    This file shows all the available items for auction and bidder can place bid or buy
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing - ShopOnline</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="heading">Shop Online</h2>
+        <ul>
+            <li><a href="login.htm">Home</a></li>
+            <li><a href="listing.htm">Listing</a></li>
+            <li><a href="bidding.htm">Bidding</a></li>
+            <li><a href="maintenance.htm">Maintenance</a></li>
+            <li><a href="login.htm">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<p class="subHeading" style="font-style: italic;">
+    Current auction items are listed below. To place a bid for an item, use the Place Bid Button.
+    <br>
+    <strong> Note: </strong> Item remaining time and bid prices are updated every 5 seconds.
+
+</p>
+<div class="container">
+
+    <div id="itemsContainer">
+        <!-- Item list will be populated here -->
+    </div>
+
+
+</div>
+
+<script src="bidding.js"></script>
+</body>
+</html>
