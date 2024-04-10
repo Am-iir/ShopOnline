@@ -7,12 +7,7 @@
     This file creates the listing based on the given item data and adds to auction.xml
 */
 
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-session_start(); // Start the session
+session_start();
 
 // Check if the user is logged in
 if (!isset($_SESSION['customerId'])) {
