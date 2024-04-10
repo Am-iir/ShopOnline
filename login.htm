@@ -1,15 +1,23 @@
+<!--
+    Student Name: Amir Maharjan
+    Student ID: 104088013
+
+    This file is a gateway for  customer to login to system
+ -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ShopOnline</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<header>
 
+<header>
     <nav>
-        <h2>Shop Online</h2>
+        <h2 class="heading">Shop Online</h2>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="listing.htm">Listing</a></li>
@@ -20,18 +28,31 @@
     </nav>
 </header>
 
-<h1>Login to ShopOnline</h1>
-<form id="loginForm" >
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <button type="button" onclick="login()">Login</button>
-</form>
+<hr>
+<p class="subHeading">
+    Please login below or to register as a new user, <a href="register.htm">Register Here</a>
+</p>
+<div class="container">
 
-<div id="loginMessage"></div>
-</body>
+    <p class="requiredField">* Required Fields</p>
+    <form id="loginForm">
+        <label for="email">Email<span class="requiredField">*</span>:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password<span class="requiredField">*</span>:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <div class="button-container">
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="reset()">Reset</button>
+        </div>
+    </form>
+
+    <div id="loginMessage">
+
+    </div>
+</div>
+
 <script src="login.js"></script>
+</body>
 </html>

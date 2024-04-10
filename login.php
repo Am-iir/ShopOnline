@@ -1,16 +1,20 @@
 <?php
-session_start(); // Start the session
+/*
+    Student Name: Amir Maharjan
+    Student ID: 104088013
 
-// Check if the form is submitted
+    This file checks customer's credentials and on success allows login otherwise display message
+*/
+
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['email']) && isset($_POST['password'])) {
 
-        // Retrieve form data
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        // Load XML file
         $xmlFile = 'customer.xml';
         $dom = new DOMDocument();
         $dom->load($xmlFile);
@@ -25,9 +29,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Check if email and password match
             if ($customerEmail == $email && $customerPassword == $password) {
-                // Set session variables
+
+                // Set customerId session variables
                 $_SESSION['customerId'] = $customer->getAttribute('id');
-                $_SESSION['firstName'] = $customer->getElementsByTagName('firstName')->item(0)->nodeValue;
 
                 $foundUser = true;
                 break;
@@ -35,11 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         if ($foundUser) {
-            echo "Okay";
 
-            // Redirect to bidding page or dashboard
-            // header("Location: bidding.php"); // Change to appropriate page
-            exit();
+            //Redirect to bidding page when user is found
+            header("Location: bidding.htm");
+
         } else {
             echo "Invalid email or password. Please try again.";
         }
