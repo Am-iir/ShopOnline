@@ -72,6 +72,8 @@ if (!isset($_SESSION['customerId'])) {
                 $dom = new DOMDocument();
                 $dom->preserveWhiteSpace = false;
 
+                date_default_timezone_set('Australia/Sydney');
+
                 if (file_exists($xmlFile)) {
                     $dom->load($xmlFile);
                 } else {
