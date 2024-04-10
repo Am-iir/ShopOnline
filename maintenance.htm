@@ -1,0 +1,46 @@
+<!--
+    Student Name: Amir Maharjan
+    Student ID: 104088013
+
+    This file is a gateway for  customer to login to system
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - ShopOnline</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="heading">Shop Online</h2>
+        <ul>
+            <li><a href="login.htm">Home</a></li>
+            <li><a href="listing.htm">Listing</a></li>
+            <li><a href="bidding.htm">Bidding</a></li>
+            <li><a href="maintenance.htm">Maintenance</a></li>
+            <li><a href="login.htm">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<p class="subHeading">
+    Process the items that has crossed the duration by clicking Process Auction Items <br>
+    Generate the report by clicking Generate Report
+</p>
+<div style="text-align: center;">
+
+    <button id="processAuctionItems" onclick="processAuctionItems()">Process Auction Items</button>
+    <button id="generateReport" onclick="generateReport()">Generate Report</button>
+
+    <div id="maintenanceMessage"></div>
+</div>
+
+<script src="maintenance.js"></script>
+</body>
+</html>
