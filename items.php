@@ -1,14 +1,16 @@
 <?php
+/*
+    Student Name: Amir Maharjan
+    Student ID: 104088013
 
-// Load the XML file
+    This file returns items listed for auction from auction.xml
+*/
+
 $doc = new DOMDocument();
 $doc->load('auction.xml');
 
-
-// Get all 'item' elements
 $items = $doc->getElementsByTagName('item');
 
-// Loop through each 'item' element
 foreach ($items as $item) {
 
     $itemID = $item->getElementsByTagName('itemID')->item(0)->nodeValue;
@@ -80,7 +82,7 @@ foreach ($items as $item) {
 
     $html .= "</div>";
 
-    // Output HTML
+
     echo $html;
 }
 ?>
