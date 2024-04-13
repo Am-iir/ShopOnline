@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<items>
+  <item>
+    <customerID>661a7d7f14d41</customerID>
+    <itemID>661a81b4af975</itemID>
+    <itemName>Iphone 15</itemName>
+    <category>Mobile</category>
+    <description>This is brand new Phone</description>
+    <startingPrice>250</startingPrice>
+    <reservePrice>1000</reservePrice>
+    <buyItNowPrice>2000</buyItNowPrice>
+    <duration>2024-04-29 05:02:32</duration>
+    <status>in_progress</status>
+    <currentDate>2024-04-13</currentDate>
+    <currentTime>22:59:32</currentTime>
+    <bidPrice>250</bidPrice>
+  </item>
+  <item>
+    <customerID>661a7d7f14d41</customerID>
+    <itemID>661a81dc2437b</itemID>
+    <itemName>Mazda3</itemName>
+    <category>Car</category>
+    <description>Old car dent free and low on kms</description>
+    <startingPrice>996</startingPrice>
+    <reservePrice>2000</reservePrice>
+    <buyItNowPrice>5000</buyItNowPrice>
+    <duration>2024-05-10 05:02:12</duration>
+    <status>in_progress</status>
+    <currentDate>2024-04-13</currentDate>
+    <currentTime>23:00:12</currentTime>
+    <bidPrice>996</bidPrice>
+  </item>
+  <item>
+    <customerID>661a7d7f14d41</customerID>
+    <itemID>661a820742d95</itemID>
+    <itemName>Mac Air</itemName>
+    <category>Laptop</category>
+    <description>My old laptop</description>
+    <startingPrice>92</startingPrice>
+    <reservePrice>300</reservePrice>
+    <buyItNowPrice>700</buyItNowPrice>
+    <duration>2024-04-24 05:04:55</duration>
+    <status>in_progress</status>
+    <currentDate>2024-04-13</currentDate>
+    <currentTime>23:00:55</currentTime>
+    <bidPrice>92</bidPrice>
+  </item>
+  <item>
+    <customerID>661a7d7f14d41</customerID>
+    <itemID>661a82562d40b</itemID>
+    <itemName>Toyota Camry</itemName>
+    <category>Car</category>
+    <description>Old but reliable car</description>
+    <startingPrice>296</startingPrice>
+    <reservePrice>1000</reservePrice>
+    <buyItNowPrice>2000</buyItNowPrice>
+    <duration>2024-04-20 04:28:14</duration>
+    <status>in_progress</status>
+    <currentDate>2024-04-13</currentDate>
+    <currentTime>23:02:14</currentTime>
+    <bidPrice>296</bidPrice>
+  </item>
+  <item>
+    <customerID>661a7d7f14d41</customerID>
+    <itemID>661a82a7bf787</itemID>
+    <itemName>Samsung Galaxy </itemName>
+    <category>Mobile</category>
+    <description>My mobile with no issues</description>
+    <startingPrice>100</startingPrice>
+    <reservePrice>300</reservePrice>
+    <buyItNowPrice>500</buyItNowPrice>
+    <duration>2024-04-20 20:35:35</duration>
+    <status>in_progress</status>
+    <currentDate>2024-04-13</currentDate>
+    <currentTime>23:03:35</currentTime>
+    <bidPrice>100</bidPrice>
+  </item>
+</items>
