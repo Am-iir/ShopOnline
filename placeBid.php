@@ -7,10 +7,6 @@
     This file handles the functionality of placing bid for Item
 */
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 session_start();
 
 // Check if bidder's ID is set in the session
