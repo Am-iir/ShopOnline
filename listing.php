@@ -79,6 +79,9 @@ if (!isset($_SESSION['customerId'])) {
             if ($_POST["reservePrice"] > $_POST["buyItNowPrice"]) {
                 $errMsg .= "Reserve Price cannot be greater than Buy It Now Price.<br>";
             }
+            if ($durationDays == 0 && $durationHours == 0 && $durationMinutes == 0) {
+                $errMsg .= "The duration date must be greater than the current date.<br>";
+            }
 
             if (!empty($errMsg)) {
                 echo $errMsg;
